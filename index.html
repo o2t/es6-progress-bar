@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+        <script src="progressbar.js"></script>
+    </head>
+    <body>
+        <progress-bar complete="42"></progress-bar>
+
+        <script>
+            (() => {
+                const progress = document.querySelector('progress-bar');
+                let complete = 0;
+
+                const progressInterval = setInterval(() => {
+                    complete += 1;
+
+                    if (complete <= 100) {
+                        progress.setAttribute('complete', complete);
+                    } else {
+                        clearInterval(progressInterval);
+                    }
+                }, 100);
+            })();
+        </script>
+    </body>
+</html>
