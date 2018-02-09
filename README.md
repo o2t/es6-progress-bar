@@ -12,4 +12,4 @@ Rewritten from this [this video](https://www.youtube.com/watch?v=Tus_GVxyOtU).
 sudo python -m SimpleHTTPServer 80
 ```
 
-Access to `[http://localhost/](http://localhost/)`
+Access to [`http://localhost/`](http://localhost/)
